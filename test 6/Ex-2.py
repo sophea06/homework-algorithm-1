@@ -56,12 +56,12 @@ studentsList = [
     }
 
 ]
-# 1 - Find the student with the highest score in the course of "html"
+# 2 - Find the student with the highest score in the course of "algorithm"
 for key in studentsList:
     if key['id'] == 1:
-        highest_score = key["scores"]["html"]
-    if key['scores']["html"] > highest_score:
-        highest_score = key["scores"]["html"]
+        highest_score = key["scores"]["algorithm"]
+    if key['scores']["algorithm"] > highest_score:
+        highest_score = key["scores"]["algorithm"]
         student_name = key['name']
 print(highest_score)
 print(student_name)

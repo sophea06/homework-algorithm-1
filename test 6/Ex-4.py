@@ -56,12 +56,12 @@ studentsList = [
     }
 
 ]
-# 1 - Find the student with the highest score in the course of "html"
+# 4 - Who has age greater than 20
 for key in studentsList:
     if key['id'] == 1:
-        highest_score = key["scores"]["html"]
-    if key['scores']["html"] > highest_score:
-        highest_score = key["scores"]["html"]
-        student_name = key['name']
-print(highest_score)
+        age_greater  = key["age"]
+    if key['age'] > 20:
+        age_greater = key["age"]
+    student_name = key['name']
+print(age_greater)
 print(student_name)

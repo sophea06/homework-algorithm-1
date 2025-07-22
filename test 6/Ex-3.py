@@ -56,12 +56,12 @@ studentsList = [
     }
 
 ]
-# 1 - Find the student with the highest score in the course of "html"
+# 3 - Who has the lowest score in the course of "english"
 for key in studentsList:
     if key['id'] == 1:
-        highest_score = key["scores"]["html"]
-    if key['scores']["html"] > highest_score:
-        highest_score = key["scores"]["html"]
+        lowest_score = key["scores"]["english"]
+    if key['scores']["english"] < lowest_score:
+        lowest_score = key["scores"]["english"]
         student_name = key['name']
-print(highest_score)
+print(lowest_score)
 print(student_name)
