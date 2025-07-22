@@ -1,0 +1,19 @@
+studentsList = [
+    {"id": 1, "name": "John", "age": 20, "gender": "male", "class": "A"},
+    {"id": 2, "name": "Jane", "age": 21, "gender": "female", "class": "B"},
+    {"id": 3, "name": "Bob", "age": 22, "gender": "male", "class": "C"},
+    {"id": 4, "name": "Alice", "age": 23, "gender": "female", "class": "A"},
+    {"id": 5, "name": "Tom", "age": 24, "gender": "male", "class": "B"},
+    {"id": 6, "name": "Lucy", "age": 25, "gender": "female", "class": "B"},
+    {"id": 7, "name": "Jack", "age": 26, "gender": "male", "class": "A"},
+]
+#3 - How many students are there in each gender?
+countFamale = 0
+countMale = 0
+for key in studentsList:
+    if key['gender'] == "female":
+        countFamale += 1
+    if key["gender"] == "male":
+        countMale += 1
+print(countFamale)
+print(countMale)
